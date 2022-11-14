@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">hello</div>
+    <script>
+        // 세 개의 결과 값은 모두 같다.
+        var divElement = document.getElementById('app');
+        var divElement = document.querySelector('#app');
+        var divElement = $('#app');
+        // ref 사용법(dom 객체에 접근)
+        var divElement = this.$refs.app;
+    </script>
+</body>
+</html>
